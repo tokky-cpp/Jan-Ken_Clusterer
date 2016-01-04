@@ -4,7 +4,16 @@
 カメラ画像中に映り込んだ手先領域の形状から、じゃんけんでどの手(グー・チョキ・パー)を出しているか判定するシステム。
 
 ##使用ライブラリ
-- Open CV
+- OpenCV-2.3.1
+###ヘッダファイル
+- opencv.hpp
+
+###ライブラリファイル
+- opencv_core231d.lib
+- opencv_imgproc231d.lib
+- opencv_highgui231d.lib
+- opencv_legacy231d.lib
+- opencv_video231d.lib
 
 ##動作環境
 - Visual Studio 2013 on Windows 7
