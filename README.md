@@ -6,27 +6,27 @@
 ##使用ライブラリ
 - OpenCV-2.3.1
 
-###ヘッダファイル
-- opencv.hpp
+  - ヘッダファイル
+    - opencv.hpp
 
-###ライブラリファイル
-- opencv_core231d.lib
-- opencv_imgproc231d.lib
-- opencv_highgui231d.lib
-- opencv_legacy231d.lib
-- opencv_video231d.lib
+  - ライブラリファイル
+    - opencv_core231d.lib
+    - opencv_imgproc231d.lib
+    - opencv_highgui231d.lib
+    - opencv_legacy231d.lib
+    - opencv_video231d.lib
 
 ##動作環境
-- Visual Studio 2013 on Windows 7
+- Visual Studio 2012 on Windows 7
 で動作することを確認済み。
 
 ##判定原理
 1.カメラ画像中から肌の色に近い部分を抽出。
-2.モルフォロジー処理(小さな領域の除去、抽出領域中の欠損の補完)。
-3.抽出領域を決定。
-4.抽出領域の輪郭を取得。
-5.抽出領域の面積と周囲長から円形度を算出。
-6.円形度をもとにじゃんけんの手を判定。
+1.モルフォロジー処理(小さな領域の除去、抽出領域中の欠損の補完)。
+1.抽出領域を決定。
+1.抽出領域の輪郭を取得。
+1.抽出領域の面積と周囲長から円形度を算出。
+1.円形度をもとにじゃんけんの手を判定。
 
 ##工夫
 - モルフォロジー処理を行うことで、環境に大きく左右されず円形度を計算することができる。
